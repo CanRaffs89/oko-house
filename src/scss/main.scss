@@ -1,0 +1,38 @@
+@use '_navbar';
+@use '_hero';
+
+// Core Styles
+:root {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    --dark-grey: #262626;
+    --mid-grey: #4b4b4b;
+    --light-grey: #6d6d6d;
+    --orange: #e3623c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    font-family: 'Helvetica Neue', 'Arial';
+    background-color: var(--dark-grey);
+    color: white;
+}
+
+.container {
+    margin: 0 120px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 0 30px;
+    }
+}
+
+
+

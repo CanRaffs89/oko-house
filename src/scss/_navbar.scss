@@ -1,0 +1,119 @@
+nav {
+    height: 50px;
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+
+    .nav-logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .nav-mobile-toggle {
+        background: var(--dark-grey);
+        border: none;
+        display: none;
+    }
+
+    .nav-links-container {
+        transition: all 0.3s ease-in-out;
+        .nav-link {
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            color: white;
+            margin-left: 45px;
+        }
+    }
+    .hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        margin-top: 30px;
+
+        .nav-logo, .nav-mobile-toggle {
+            z-index: 2;
+        }
+
+        .nav-mobile-toggle {
+            display: initial;
+            position: fixed;
+            top: 45px;
+            right: 30px;
+            cursor: pointer;
+
+            i {
+                display: block;
+                width: 20px;
+                height: 2px;
+                background: #fff;
+            }
+        
+            i:nth-child(2) {
+                margin-top: 4px;
+                opacity: 1;
+            }
+        
+            i:nth-child(3) {
+                margin-top: 4px;
+            }
+        }
+
+        .nav-links-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100vh;
+            display: flex;
+            height: -webkit-fill-available;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            background: var(--dark-grey);
+            z-index: -1;
+            opacity: 0;
+
+            .nav-link {
+                margin: 20px 30px 20px 45px;
+            }
+        }
+        
+        /* Mobile Nav Animation */
+        #nav:checked + .nav-mobile-toggle {
+            transform: rotate(45deg);
+        }
+
+        #nav:checked + .nav-mobile-toggle i {
+            background: #fff;
+            transition: transform 0.2s ease;
+        }
+
+        #nav:checked + .nav-mobile-toggle i:nth-child(1) {
+            transform: translateY(6px) rotate(180deg);
+        }
+
+        #nav:checked + .nav-mobile-toggle i:nth-child(2) {
+            opacity: 0;
+        }
+
+        #nav:checked + .nav-mobile-toggle i:nth-child(3) {
+            transform: translateY(-6px) rotate(90deg);
+        }
+
+        #nav:checked ~ .nav-links-container {
+            z-index: 1;
+            opacity: 1;
+        }
+
+        #nav:checked ~ .nav-links-container a {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+    }
+}
