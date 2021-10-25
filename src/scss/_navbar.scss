@@ -11,7 +11,6 @@ nav {
     }
 
     .nav-mobile-toggle {
-        background: var(--dark-grey);
         border: none;
         display: none;
     }
@@ -31,7 +30,7 @@ nav {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
     nav {
         margin-top: 30px;
 

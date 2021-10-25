@@ -7,6 +7,9 @@
 
     .hero-container {
         height: 100%;
+        width: auto;
+        max-width: 900px;
+        min-width: 236px;
         margin: 0 120px;
         display: flex;
         flex-direction: column;
@@ -20,7 +23,7 @@
         span {
             height: 3px;
             background: white;
-            width: 890px;
+            width: 100%;
             margin: 20px 0;
         }
 
@@ -52,6 +55,48 @@
                 width: 15px;
                 margin-left: 5px;
             }
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    #hero-img {
+        .hero-container {
+
+            .hero-text {
+                font-size: 60px;
+            }
+
+            span {
+                height: 2px;
+            }
+
+            .hero-text-small {
+                font-size: 16px;
+            }
+
+            button {
+                height: 30px;
+                width: 130px;
+                border: 2px solid white;
+
+                a {
+                    font-size: 10px;
+                }
+
+                .btn-arrow {
+                    height: 13px;
+                    width: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 810px) {
+    #hero-img {
+        .hero-container {
+            margin: 0 30% 0 30px;
         }
     }
 }
