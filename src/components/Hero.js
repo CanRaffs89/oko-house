@@ -1,4 +1,4 @@
-import Button from "./Button"
+import arrow from '../img/arrow.svg'
 
 const Hero = () => {
     return (
@@ -7,7 +7,10 @@ const Hero = () => {
                 <h1 className="hero-text">Designs for Life</h1>
                 <span></span>
                 <h3 className="hero-text-small">Eco-friendly, future-proof, self-build kit houses designed for modern living</h3>
-                <Button link={'/'} text={'MORE'}/>
+                <button>
+                    <a href="/">MORE </a>
+                    <img className="btn-arrow" src={arrow} alt="" />
+                </button>
             </div>
         </div>
     )
