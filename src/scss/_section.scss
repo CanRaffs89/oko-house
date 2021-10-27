@@ -31,6 +31,10 @@
                 font-size: 16px;
                 line-height: 24px;
             }
+
+            #secondPara {
+                margin: 20px 0;
+            }
         }
         
         .section-grid-1 {
@@ -66,7 +70,7 @@
         height: 2px;
         width: 100%;
         background: white;
-        margin-top: 5px;
+        margin-top: 95px;
     }
 }
 
@@ -130,6 +134,9 @@
                     margin: 0 0 5% 0;
                 }
             }
-        }    
+        } 
+        .span-line-bottom-border {
+            margin-top: 35px;
+        }
     }
 }

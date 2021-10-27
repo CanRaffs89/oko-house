@@ -192,6 +192,9 @@ nav .nav-links-container .nav-link {
   font-size: 16px;
   line-height: 24px;
 }
+.section-container .section-content-container .section-text #secondPara {
+  margin: 20px 0;
+}
 .section-container .section-content-container .section-grid-1 {
   display: flex;
   flex-wrap: wrap;
@@ -218,7 +221,7 @@ nav .nav-links-container .nav-link {
   height: 2px;
   width: 100%;
   background: white;
-  margin-top: 5px;
+  margin-top: 95px;
 }
 
 @media (max-width: 1024px) {
@@ -264,6 +267,9 @@ nav .nav-links-container .nav-link {
   }
   .section-container .section-content-container .section-grid-1 .grid-lg {
     margin: 0 0 5% 0;
+  }
+  .section-container .span-line-bottom-border {
+    margin-top: 35px;
   }
 }
 button {

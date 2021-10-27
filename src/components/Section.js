@@ -1,14 +1,15 @@
 import Button from "./Button"
 
-const Section = () => {
+const Section = ({ title, firstPara, secondPara, thirdPara }) => {
     return (
         <div className="section-container">
             <div className="section-content-container">
                 <div className="section-text">
-                    <h1>House Designs</h1>
+                    <h1>{title}</h1>
                     <span className="span-line-text"></span>
-                    <p>Eco-friendly, future-proof, self-build kit houses designed for modern living.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod minima doloribus natus molestias doloremque sint corporis. Doloribus quam deleniti nobis ullam. Quae adipisci nam voluptatibus nemo consequuntur esse corrupti eaque.</p>
+                    <p>{firstPara}</p>
+                    <p id="secondPara">{secondPara}</p>
+                    <p>{thirdPara}</p>
                     <Button link={'/'} text={'DESIGNS'}/>
                 </div>
                 <div className="section-grid-1">
