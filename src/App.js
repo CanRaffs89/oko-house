@@ -20,7 +20,7 @@ const App = () => {
         />
         <Section 
           title={'Features'}
-          firstPara={'Aliquid mollitia nulla modi adipisci aliquid. Veniam ipsa delectus ratione labore.'}
+          firstPara={'Delectus mollitia nulla modi adipisci aliquid. Veniam ipsa delectus ratione labore.'}
           secondPara={'Rem recusandae temporibus provident quae perspiciatis esse. Possimus id est esse est consequatur architecto aspernatur deserunt. Minima ut voluptas aliquam labore qui impedit sunt. Libero soluta neque et quidem. Aut porro quibusdam est.'}
           thirdPara={'Natus soluta qui et porro culpa earum et. Quos et praesentium voluptatem alias non dolorum.'}
         />
