@@ -1,0 +1,41 @@
+button {
+    width: 150px;
+    height: 35px;
+    background: transparent;
+    border: 3px solid white;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        color: white;
+        font-size: 12px;
+        font-weight: 200;
+        letter-spacing: 2px;
+        text-decoration: none;
+    }
+
+    .btn-arrow {
+        height: 15px;
+        width: 15px;
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 950px) {
+    button {
+        height: 30px;
+        width: 130px;
+        border: 2px solid white;
+
+        a {
+            font-size: 10px;
+        }
+
+        .btn-arrow {
+            height: 13px;
+            width: 13px;
+        }
+    }
+}
