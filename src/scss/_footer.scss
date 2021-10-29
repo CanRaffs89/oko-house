@@ -1,0 +1,46 @@
+footer {
+    display: flex;
+    height: auto;
+    max-height: 335px;
+    margin-bottom: 60px;
+
+    div {
+        margin-right: auto;
+    }
+
+    h3 {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 24px;
+        margin-bottom: 60px;
+        text-decoration: none;
+        color: white;
+    }
+
+    #footer-name {
+        a {
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+
+        h3 {
+            max-width: 100px;
+            display: inline-block;
+            margin-left: 20px;
+            margin-bottom: 35px;
+        }
+    }
+
+    #footer-social {
+        #footer-social-icons {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Section from "./components/Section";
 import NavbarToggle from "./components/NavbarToggle";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
           secondPara={'Rem recusandae temporibus provident quae perspiciatis esse. Possimus id est esse est consequatur architecto aspernatur deserunt. Minima ut voluptas aliquam labore qui impedit sunt. Libero soluta neque et quidem. Aut porro quibusdam est.'}
           thirdPara={'Natus soluta qui et porro culpa earum et. Quos et praesentium voluptatem alias non dolorum.'}
         />
+        <Footer />
       </div>
     </>
   );

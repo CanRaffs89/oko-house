@@ -164,7 +164,7 @@ nav .nav-links-container .nav-link {
 .section-container {
   min-height: 1000px;
   height: auto;
-  margin: 120px 0 60px 0;
+  margin: 60px 0;
   display: flex;
   flex-direction: column;
 }
@@ -221,7 +221,7 @@ nav .nav-links-container .nav-link {
   height: 2px;
   width: 100%;
   background: white;
-  margin-top: 95px;
+  margin-top: 35px;
 }
 
 @media (max-width: 1024px) {
@@ -248,7 +248,7 @@ nav .nav-links-container .nav-link {
 }
 @media (max-width: 650px) {
   .section-container {
-    margin: 60px 0;
+    margin: 30px 0;
   }
   .section-container .section-content-container .section-text h1 {
     font-size: 40px;
@@ -309,6 +309,43 @@ button .btn-arrow {
     width: 13px;
   }
 }
+footer {
+  display: flex;
+  height: auto;
+  max-height: 335px;
+  margin-bottom: 60px;
+}
+footer div {
+  margin-right: auto;
+}
+footer h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 60px;
+  text-decoration: none;
+  color: white;
+}
+footer #footer-name a {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+}
+footer #footer-name a img {
+  height: 50px;
+  width: 50px;
+}
+footer #footer-name h3 {
+  max-width: 100px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 35px;
+}
+footer #footer-social #footer-social-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
 :root {
   font-size: 16px;
   scroll-behavior: smooth;

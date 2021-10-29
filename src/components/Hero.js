@@ -7,7 +7,7 @@ const Hero = () => {
                 <h1 className="hero-text">Designs for Life</h1>
                 <span></span>
                 <h3 className="hero-text-small">Eco-friendly, future-proof, self-build kit houses designed for modern living</h3>
-                <Button link={'/'} text={'MORE'}/>
+                <Button link={'/'} text={'ABOUT'}/>
             </div>
         </div>
     )
