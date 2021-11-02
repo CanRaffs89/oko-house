@@ -1,15 +1,17 @@
+import { Link } from 'react-router-dom'
 import logo from '../img/logo.svg'
+
 
 const Navbar = () => {
     return (
         <nav>
-            <a className="nav-logo" href="/">
+            <Link className="nav-logo" to="/">
                 <img src={logo} alt="" />
-            </a>
+            </Link>
             <div className="nav-links-container" id="nav-mobile">
-                <a className="nav-link" href="/">ABOUT</a>
-                <a className="nav-link" href="/">DESIGNS</a>
-                <a className="nav-link" href="/">GALLERY</a>
+                <Link className="nav-link" to="/">ABOUT</Link>
+                <Link className="nav-link" to="/designs">DESIGNS</Link>
+                <a className="nav-link" href="../pages/Designs.js">GALLERY</a>
                 <a className="nav-link" href="/">FAQ</a>
                 <a className="nav-link" href="/">CONTACT</a>
             </div>
