@@ -346,6 +346,35 @@ footer #footer-social #footer-social-icons {
   justify-content: space-between;
 }
 
+@media (max-width: 810px) {
+  footer {
+    flex-direction: column;
+  }
+  footer #footer-name, footer #footer-social, footer #footer-contact {
+    width: 100%;
+  }
+  footer #footer-social #footer-social-icons {
+    display: inline-block;
+  }
+  footer #footer-social #footer-social-icons a:nth-child(2) {
+    margin: 0 5px;
+  }
+  footer #footer-name h3 {
+    max-width: 50px;
+  }
+  footer .footer-inner, footer #footer-social-icons {
+    float: right;
+  }
+  footer .footer-inner, footer h3 {
+    display: inline-block;
+  }
+  footer h3 {
+    font-size: 22px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+}
 :root {
   font-size: 16px;
   scroll-behavior: smooth;

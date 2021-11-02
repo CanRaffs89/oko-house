@@ -9,9 +9,11 @@ const Footer = () => {
             <div id="footer-name">
                 <a href="/"><img src={logo} alt="" /></a>
                 <h3>öko haus</h3>
-                <p>123 Street Name</p>
-                <p>City Name</p>
-                <p>AA11 123</p>
+                <div className="footer-inner">
+                    <p>123 Street Name</p>
+                    <p>City Name</p>
+                    <p>AA11 123</p>
+                </div>
             </div>
             <div id="footer-social">
                 <h3>Social Media</h3>
@@ -23,8 +25,10 @@ const Footer = () => {
             </div>
             <div id="footer-contact">
                 <h3>Contact</h3>
-                <p>info@ökohaus.com</p>
-                <p>+44 20 1234 567</p>
+                <div className="footer-inner">
+                    <p>info@ökohaus.com</p>
+                    <p>+44 20 1234 567</p>
+                </div>
             </div>
         </footer>
     )
