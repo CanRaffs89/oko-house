@@ -1,4 +1,5 @@
-import Button from "./Button"
+import Button from './Button'
+import { Link } from 'react-router-dom'
 
 const Section = ({ title, firstPara, secondPara, thirdPara }) => {
     return (
@@ -13,11 +14,11 @@ const Section = ({ title, firstPara, secondPara, thirdPara }) => {
                     <Button link={'/'} text={'MORE'}/>
                 </div>
                 <div className="section-grid-1">
-                    <a className="grid-sm" href="/"></a>
-                    <a className="grid-md" href="/"></a>
-                    <a className="grid-lg" href="/"></a>
-                    <a className="grid-md" href="/"></a>
-                    <a className="grid-sm" href="/"></a>
+                    <Link className="grid-sm" to="#"></Link>
+                    <Link className="grid-md" to="#"></Link>
+                    <Link className="grid-lg" to="#"></Link>
+                    <Link className="grid-md" to="#"></Link>
+                    <Link className="grid-sm" to="#"></Link>
                 </div>
             </div>
             <span className="span-line-bottom-border"></span>

@@ -25,7 +25,7 @@ nav {
     }
 
     .nav-links-container {
-        transition: all 0.3s ease-in-out;
+        transition: 340ms;
         .nav-link {
             font-size: 12px;
             letter-spacing: 2px;
@@ -69,57 +69,27 @@ nav {
             z-index: 2;
         }
 
+        .nav-links-container.active {
+            right: 0;
+        }
+
         .nav-links-container {
             position: fixed;
             top: 0;
-            left: 0;
-            right: 0;
+            right: -100%;
             height: 100vh;
+            width: 50%;
             display: flex;
             height: -webkit-fill-available;
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
             background: var(--dark-grey);
-            z-index: -1;
-            opacity: 0;
 
             .nav-link {
                 margin: 20px 30px 20px 45px;
             }
         }
-    }
-
-    /* Mobile Nav Animation */
-    #nav:checked + .nav-mobile-toggle {
-        transform: rotate(45deg);
-    }
-
-    #nav:checked + .nav-mobile-toggle i {
-        background: #fff;
-        transition: transform 0.2s ease;
-    }
-
-    #nav:checked + .nav-mobile-toggle i:nth-child(1) {
-        transform: translateY(6px) rotate(180deg);
-    }
-
-    #nav:checked + .nav-mobile-toggle i:nth-child(2) {
-        opacity: 0;
-    }
-
-    #nav:checked + .nav-mobile-toggle i:nth-child(3) {
-        transform: translateY(-6px) rotate(90deg);
-    }
-
-    #nav:checked ~ nav .nav-links-container {
-        z-index: 1;
-        opacity: 1;
-    }
-
-    #nav:checked ~ nav .nav-links-container a {
-        opacity: 1;
-        transform: translateX(0);
     }
 
 }
