@@ -11,7 +11,7 @@ const Section = ({ title, firstPara, secondPara, thirdPara }) => {
                     <p>{firstPara}</p>
                     <p id="secondPara">{secondPara}</p>
                     <p>{thirdPara}</p>
-                    <Button link={'/'} text={'MORE'}/>
+                    <Button link={'/designs'} text={'MORE'}/>
                 </div>
                 <div className="section-grid-1">
                     <Link className="grid-sm" to="#"></Link>
