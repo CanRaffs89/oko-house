@@ -1,6 +1,6 @@
 const Gallery = () => {
     return (
-        <div className="container">
+        <div className="container page-container">
             <h1>Gallery</h1>
         </div>
     )

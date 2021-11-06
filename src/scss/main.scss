@@ -3,6 +3,7 @@
 @use '_section';
 @use '_button';
 @use '_footer';
+@use '_designs';
 
 // Core Styles
 :root {
@@ -27,13 +28,39 @@ body {
     color: white;
 }
 
+h1 {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
 .container {
     margin: 0 120px;
+}
+
+.page-container {
+    padding-top: 170px;
 }
 
 @media (max-width: 810px) {
     .container {
         margin: 0 30px;
+    }
+
+    .page-container {
+        padding-top: 120px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    
+    p {
+        font-size: 14px;
     }
 }
 

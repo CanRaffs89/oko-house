@@ -6,6 +6,7 @@ import Designs from "./pages/Designs";
 import Contact from "./pages/Contact";
 import Faq from "./pages/Faq";
 import Gallery from "./pages/Gallery";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -21,6 +22,9 @@ const App = () => {
         <Route path='/faq' exact component={Faq}/>
         <Route path='/contact' exact component={Contact}/>
       </Switch>
+      <div className="container">
+        <Footer />
+      </div>
     </Router>
   );
 }

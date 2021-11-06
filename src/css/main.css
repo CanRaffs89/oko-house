@@ -146,10 +146,6 @@ nav .nav-links-container .nav-link {
   width: 20%;
   margin-right: 5%;
 }
-.section-container .section-content-container .section-text h1 {
-  font-size: 56px;
-  font-weight: bold;
-}
 .section-container .section-content-container .section-text .span-line-text {
   display: inline-block;
   height: 2px;
@@ -157,40 +153,30 @@ nav .nav-links-container .nav-link {
   background: white;
   margin: 25px 0;
 }
-.section-container .section-content-container .section-text p {
-  font-size: 16px;
-  line-height: 24px;
-}
 .section-container .section-content-container .section-text #secondPara {
   margin: 20px 0;
 }
-.section-container .section-content-container .section-grid-1 {
+.section-container .section-content-container .section-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   width: 75%;
 }
-.section-container .section-content-container .section-grid-1 a {
+.section-container .section-content-container .section-grid a {
   border: 1px solid white;
   height: 300px;
 }
-.section-container .section-content-container .section-grid-1 .grid-sm, .section-container .section-content-container .section-grid-1 .grid-md, .section-container .section-content-container .section-grid-1 .grid-lg {
+.section-container .section-content-container .section-grid .grid-sm, .section-container .section-content-container .section-grid .grid-md, .section-container .section-content-container .section-grid .grid-lg {
   margin-bottom: 25px;
 }
-.section-container .section-content-container .section-grid-1 .grid-sm {
+.section-container .section-content-container .section-grid .grid-sm {
   width: 35%;
 }
-.section-container .section-content-container .section-grid-1 .grid-md {
+.section-container .section-content-container .section-grid .grid-md {
   width: 60%;
 }
-.section-container .section-content-container .section-grid-1 .grid-lg {
+.section-container .section-content-container .section-grid .grid-lg {
   width: 100%;
-}
-.section-container .span-line-bottom-border {
-  height: 2px;
-  width: 100%;
-  background: white;
-  margin-top: 35px;
 }
 
 @media (max-width: 1024px) {
@@ -205,13 +191,13 @@ nav .nav-links-container .nav-link {
     margin-right: 0;
     margin-bottom: 5%;
   }
-  .section-container .section-content-container .section-grid-1 {
+  .section-container .section-content-container .section-grid {
     width: 100%;
   }
-  .section-container .section-content-container .section-grid-1 .grid-sm {
+  .section-container .section-content-container .section-grid .grid-sm {
     width: 40%;
   }
-  .section-container .section-content-container .section-grid-1 .grid-md {
+  .section-container .section-content-container .section-grid .grid-md {
     width: 55%;
   }
 }
@@ -219,22 +205,16 @@ nav .nav-links-container .nav-link {
   .section-container {
     margin: 30px 0;
   }
-  .section-container .section-content-container .section-text h1 {
-    font-size: 40px;
-  }
-  .section-container .section-content-container .section-text p {
-    font-size: 14px;
-  }
-  .section-container .section-content-container .section-grid-1 .grid-sm, .section-container .section-content-container .section-grid-1 .grid-md {
+  .section-container .section-content-container .section-grid .grid-sm, .section-container .section-content-container .section-grid .grid-md {
     margin-bottom: 5%;
   }
-  .section-container .section-content-container .section-grid-1 .grid-sm {
+  .section-container .section-content-container .section-grid .grid-sm {
     width: 100%;
   }
-  .section-container .section-content-container .section-grid-1 .grid-md {
+  .section-container .section-content-container .section-grid .grid-md {
     width: 100%;
   }
-  .section-container .section-content-container .section-grid-1 .grid-lg {
+  .section-container .section-content-container .section-grid .grid-lg {
     margin: 0 0 5% 0;
   }
   .section-container .span-line-bottom-border {
@@ -279,10 +259,16 @@ button .btn-arrow {
   }
 }
 footer {
-  display: flex;
   height: auto;
   max-height: 335px;
-  margin-bottom: 60px;
+  margin: 60px auto;
+}
+footer .footer-border {
+  display: inline-block;
+  height: 2px;
+  width: 100%;
+  background: white;
+  margin-bottom: 40px;
 }
 footer div {
   margin-right: auto;
@@ -294,6 +280,10 @@ footer h3 {
   margin-bottom: 60px;
   text-decoration: none;
   color: white;
+}
+footer #footer-items {
+  display: flex;
+  margin: 0;
 }
 footer #footer-name a {
   height: 50px;
@@ -317,33 +307,62 @@ footer #footer-social #footer-social-icons {
 
 @media (max-width: 810px) {
   footer {
+    margin: 30px auto;
+  }
+  footer #footer-items {
     flex-direction: column;
   }
-  footer #footer-name, footer #footer-social, footer #footer-contact {
+  footer #footer-items #footer-name, footer #footer-items #footer-social, footer #footer-items #footer-contact {
     width: 100%;
   }
-  footer #footer-social #footer-social-icons {
+  footer #footer-items #footer-social #footer-social-icons {
     display: inline-block;
   }
-  footer #footer-social #footer-social-icons a:nth-child(2) {
+  footer #footer-items #footer-social #footer-social-icons a:nth-child(2) {
     margin: 0 5px;
   }
-  footer #footer-name h3 {
+  footer #footer-items #footer-name h3 {
     max-width: 50px;
   }
-  footer .footer-inner, footer #footer-social-icons {
+  footer #footer-items .footer-inner, footer #footer-items #footer-social-icons {
     float: right;
   }
-  footer .footer-inner, footer h3 {
+  footer #footer-items .footer-inner, footer #footer-items h3 {
     display: inline-block;
   }
-  footer h3 {
+  footer #footer-items h3 {
     font-size: 22px;
   }
-  footer p {
+  footer #footer-items p {
     font-size: 14px;
   }
 }
+.designs-span {
+  height: 2px;
+  width: 100%;
+  background: white;
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.designs-grid {
+  max-width: 100%;
+  display: grid;
+  grid-gap: 1rem;
+  margin: 0 auto 60px auto;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.designs-grid .designs-grid-item {
+  min-height: 300px;
+  min-width: 250px;
+  border: 1px solid white;
+  padding: 1rem;
+}
+
+.designs-text {
+  margin-bottom: 30px;
+}
+
 :root {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -366,13 +385,39 @@ body {
   color: white;
 }
 
+h1 {
+  font-size: 56px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .container {
   margin: 0 120px;
+}
+
+.page-container {
+  padding-top: 170px;
 }
 
 @media (max-width: 810px) {
   .container {
     margin: 0 30px;
+  }
+
+  .page-container {
+    padding-top: 120px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 14px;
   }
 }
 

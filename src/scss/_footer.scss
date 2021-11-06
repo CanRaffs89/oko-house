@@ -1,8 +1,15 @@
 footer {
-    display: flex;
     height: auto;
     max-height: 335px;
-    margin-bottom: 60px;
+    margin: 60px auto;
+
+    .footer-border {
+        display: inline-block;
+        height: 2px;
+        width: 100%;
+        background: white;
+        margin-bottom: 40px;
+    }
 
     div {
         margin-right: auto;
@@ -15,6 +22,11 @@ footer {
         margin-bottom: 60px;
         text-decoration: none;
         color: white;
+    }
+
+    #footer-items {
+        display: flex;
+        margin: 0;
     }
 
     #footer-name {
@@ -47,42 +59,46 @@ footer {
 
 @media (max-width: 810px) {
     footer {
-        flex-direction: column;
+        margin: 30px auto;
 
-        #footer-name, #footer-social, #footer-contact {
-            width: 100%;
-        }
+        #footer-items {
+            flex-direction: column;
 
-        #footer-social {
-            #footer-social-icons {
+            #footer-name, #footer-social, #footer-contact {
+                width: 100%;
+            }
+
+            #footer-social {
+                #footer-social-icons {
+                    display: inline-block;
+                }
+
+                #footer-social-icons a:nth-child(2) {
+                    margin: 0 5px;
+                }
+            }
+
+            #footer-name {
+                h3 {
+                    max-width: 50px;
+                }
+            }
+
+            .footer-inner, #footer-social-icons {
+                float: right;
+            }
+
+            .footer-inner, h3 {
                 display: inline-block;
             }
 
-            #footer-social-icons a:nth-child(2) {
-                margin: 0 5px;
-            }
-        }
-
-        #footer-name {
             h3 {
-                max-width: 50px;
+                font-size: 22px;
             }
-        }
 
-        .footer-inner, #footer-social-icons {
-            float: right;
-        }
-
-        .footer-inner, h3 {
-            display: inline-block;
-        }
-
-        h3 {
-            font-size: 22px;
-        }
-
-        p {
-            font-size: 14px;
+            p {
+                font-size: 14px;
+            }
         }
     }
 }

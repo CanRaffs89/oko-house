@@ -6,6 +6,8 @@ import twtr_icon from '../img/twtr_icon.svg'
 const Footer = () => {
     return (
         <footer>
+            <span className="footer-border"></span>
+            <div id="footer-items">
             <div id="footer-name">
                 <a href="/"><img src={logo} alt="" /></a>
                 <h3>öko haus</h3>
@@ -29,6 +31,7 @@ const Footer = () => {
                     <p>info@ökohaus.com</p>
                     <p>+44 20 1234 567</p>
                 </div>
+            </div>
             </div>
         </footer>
     )

@@ -1,0 +1,26 @@
+.designs-span {
+    height: 2px;
+    width: 100%;
+    background: white;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+.designs-grid {
+    max-width: 100%;
+    display: grid;
+    grid-gap: 1rem;
+    margin: 0 auto 60px auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    .designs-grid-item {
+        min-height: 300px;
+        min-width: 250px;
+        border: 1px solid white;
+        padding: 1rem;
+    }
+}
+
+.designs-text {
+    margin-bottom: 30px;
+}

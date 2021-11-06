@@ -1,7 +1,7 @@
 import Button from './Button'
 import { Link } from 'react-router-dom'
 
-const Section = ({ title, firstPara, secondPara, thirdPara }) => {
+const Section = ({ title, firstPara, secondPara, thirdPara, buttonLink, buttonText }) => {
     return (
         <div className="section-container">
             <div className="section-content-container">
@@ -11,9 +11,9 @@ const Section = ({ title, firstPara, secondPara, thirdPara }) => {
                     <p>{firstPara}</p>
                     <p id="secondPara">{secondPara}</p>
                     <p>{thirdPara}</p>
-                    <Button link={'/designs'} text={'MORE'}/>
+                    <Button link={buttonLink} text={buttonText}/>
                 </div>
-                <div className="section-grid-1">
+                <div className="section-grid">
                     <Link className="grid-sm" to="#"></Link>
                     <Link className="grid-md" to="#"></Link>
                     <Link className="grid-lg" to="#"></Link>
@@ -21,7 +21,6 @@ const Section = ({ title, firstPara, secondPara, thirdPara }) => {
                     <Link className="grid-sm" to="#"></Link>
                 </div>
             </div>
-            <span className="span-line-bottom-border"></span>
         </div>
     )
 }

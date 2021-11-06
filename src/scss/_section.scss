@@ -13,11 +13,6 @@
         .section-text {
             width: 20%;
             margin-right: 5%;
-
-            h1 {
-                font-size: 56px;
-                font-weight: bold;
-            }
         
             .span-line-text {
                 display: inline-block;
@@ -26,18 +21,13 @@
                 background: white;
                 margin: 25px 0;
             }
-        
-            p {
-                font-size: 16px;
-                line-height: 24px;
-            }
 
             #secondPara {
                 margin: 20px 0;
             }
         }
         
-        .section-grid-1 {
+        .section-grid {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -65,13 +55,6 @@
             }
         }
     }
-
-    .span-line-bottom-border {
-        height: 2px;
-        width: 100%;
-        background: white;
-        margin-top: 35px;
-    }
 }
 
 @media (max-width: 1024px) {
@@ -87,7 +70,7 @@
                 margin-bottom: 5%;
             }
 
-            .section-grid-1 {
+            .section-grid {
                 width: 100%;
 
                 .grid-sm {
@@ -107,17 +90,7 @@
         margin: 30px 0;
 
         .section-content-container {
-            .section-text {
-                h1 {
-                    font-size: 40px;
-                }
-
-                p {
-                    font-size: 14px;
-                }
-            }
-
-            .section-grid-1 {
+            .section-grid {
                 .grid-sm, .grid-md {
                     margin-bottom: 5%;
                 }
