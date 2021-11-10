@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Designs from "./pages/Designs";
+import Design from "./pages/Design";
 import Contact from "./pages/Contact";
 import Faq from "./pages/Faq";
 import Gallery from "./pages/Gallery";
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='/' exact component={Home}/>
         <Route path='/about' exact component={About}/>
         <Route path='/designs' exact component={Designs}/>
+        <Route path='/designs/:designId'component={Design}/>
         <Route path='/gallery' exact component={Gallery}/>
         <Route path='/faq' exact component={Faq}/>
         <Route path='/contact' exact component={Contact}/>

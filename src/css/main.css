@@ -363,6 +363,16 @@ footer #footer-social #footer-social-icons {
   margin-bottom: 30px;
 }
 
+.design-content {
+  display: flex;
+}
+.design-content .design-content-text, .design-content .design-content-grid {
+  width: 50%;
+}
+.design-content .design-content-grid {
+  display: grid;
+}
+
 :root {
   font-size: 16px;
   scroll-behavior: smooth;

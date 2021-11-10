@@ -1,0 +1,11 @@
+.design-content {
+    display: flex;
+
+    .design-content-text, .design-content-grid {
+        width: 50%;
+    }
+
+    .design-content-grid {
+        display: grid;
+    }
+}
