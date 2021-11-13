@@ -5,7 +5,27 @@
         width: 50%;
     }
 
+    .design-content-text p {
+        margin-top: 20px;
+    }
+
     .design-content-grid {
         display: grid;
+        grid-gap: 1rem;
+
+        .design-content-grid-item-main, .design-content-grid-item-sm {
+            border: 1px solid white;
+            margin-left: auto;
+        }
+
+        .design-content-grid-item-main {
+            height: 464px;
+            width: 464px;
+        }
+
+        .design-content-grid-item-sm {
+            height: 228px;
+            width: 228px;
+        }
     }
 }

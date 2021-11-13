@@ -369,8 +369,24 @@ footer #footer-social #footer-social-icons {
 .design-content .design-content-text, .design-content .design-content-grid {
   width: 50%;
 }
+.design-content .design-content-text p {
+  margin-top: 20px;
+}
 .design-content .design-content-grid {
   display: grid;
+  grid-gap: 1rem;
+}
+.design-content .design-content-grid .design-content-grid-item-main, .design-content .design-content-grid .design-content-grid-item-sm {
+  border: 1px solid white;
+  margin-left: auto;
+}
+.design-content .design-content-grid .design-content-grid-item-main {
+  height: 464px;
+  width: 464px;
+}
+.design-content .design-content-grid .design-content-grid-item-sm {
+  height: 228px;
+  width: 228px;
 }
 
 :root {
