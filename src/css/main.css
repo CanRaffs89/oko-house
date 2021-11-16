@@ -366,27 +366,32 @@ footer #footer-social #footer-social-icons {
 .design-content {
   display: flex;
 }
-.design-content .design-content-text, .design-content .design-content-grid {
+.design-content .design-content-text {
+  width: 45%;
+  margin-right: 5%;
+}
+.design-content .design-content-grid {
   width: 50%;
 }
 .design-content .design-content-text p {
   margin-top: 20px;
 }
 .design-content .design-content-grid {
-  display: grid;
-  grid-gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .design-content .design-content-grid .design-content-grid-item-main, .design-content .design-content-grid .design-content-grid-item-sm {
   border: 1px solid white;
-  margin-left: auto;
 }
 .design-content .design-content-grid .design-content-grid-item-main {
-  height: 464px;
-  width: 464px;
+  height: 500px;
+  width: 100%;
 }
 .design-content .design-content-grid .design-content-grid-item-sm {
-  height: 228px;
-  width: 228px;
+  height: 260px;
+  width: 48%;
+  margin-top: 20px;
 }
 
 :root {

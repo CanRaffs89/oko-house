@@ -1,4 +1,4 @@
-const Design = ({ match, location }) => {
+const Design = ({ match }) => {
     const { params: { designId } } = match;
 
     return (
